@@ -8,14 +8,14 @@ import javafx.stage.Stage;
 
 public class Main extends Application {
 
-    @Override
-    public void start(Stage primaryStage) throws Exception{
-        Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
-        primaryStage.setTitle("Initial commit with a Hello World JavaFX application");
-        System.out.print("Initial commit with a Hello World JavaFX application");
-        primaryStage.setScene(new Scene(root, 300, 275));
-        primaryStage.show();
-    }
+   @Override
+public void start(Stage primaryStage) throws Exception {
+   Parent root = FXMLLoader.load(getClass().getResource("fxml/login.fxml"));
+   primaryStage.setTitle("FIS - Student Manager");
+   primaryStage.setScene(new Scene(root, 600, 400));
+   primaryStage.show();
+}
+
 
 
     public static void main(String[] args) {
